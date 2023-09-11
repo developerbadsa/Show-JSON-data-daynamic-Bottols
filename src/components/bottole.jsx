@@ -1,3 +1,5 @@
+import { addToLS } from "../localstorage/localstorage";
+
 function Bottole({data, handleCardBtn}) {
 
     const {id, name, seller, price, img} = data;
