@@ -16,7 +16,7 @@ function Bottole({data, handleCardBtn}) {
           <h2 className="card-title"> {name}</h2>
           <p >Price: {price}</p>
           <div className="card-actions justify-center">
-            <button onClick={()=>handleCardBtn(price)} className="btn btn-primary">Add to Card</button>
+            <button onClick={()=>handleCardBtn(data)} className="btn btn-primary">Add to Card</button>
           </div>
         </div>
       </div>
