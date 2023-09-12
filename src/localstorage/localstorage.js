@@ -8,17 +8,18 @@ function getStoredData() {
   }
 }
 
+
 // save card to localStorage
 function saveCardToLS(card) {
   const convertToString = JSON.stringify(card);
-  localStorage.setItem(convertToString);
+  localStorage.setItem('card', convertToString);
 }
 
 
 function addToLS(id){
-    const card = getStoredDataad()
-    card.push(id)
-    saveCardToLS(card)
+     const card = getStoredData()
+     card.push(id);
+     saveCardToLS(card)
 }
 
 

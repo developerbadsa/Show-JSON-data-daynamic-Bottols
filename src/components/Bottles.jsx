@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Bottole from "./bottole";
+import {addToLS} from "../localstorage/localstorage"
 
 function Bottoles() {
   const [countries, setCountries] = useState([]);
@@ -12,7 +13,9 @@ function Bottoles() {
   const handleCardBtn = (addedData) => {
     let newData = [...card, addedData];
     setCard(newData);
-    console.log(showCount);
+    addToLS(addedData.id)
+    console.log()
+
   };
 
 
